@@ -43,7 +43,7 @@ class ViewController: UIViewController {
         showAlert()
     }
     
-    fileprivate func updateScore() {
+    private func updateScore() {
         var points = 100 - abs(currentValue - targetValue)
         if points == 100 {
             points += 100
@@ -56,7 +56,7 @@ class ViewController: UIViewController {
         scoreLabel.text = String(totalScore)
     }
     
-    fileprivate func showAlert() {
+    private func showAlert() {
         let message = getMessage()
         let title = getTitle()
         let alert = UIAlertController(title: "\(title)", message: message, preferredStyle: .alert)
@@ -68,7 +68,7 @@ class ViewController: UIViewController {
         present(alert, animated: true, completion: nil)
     }
     
-    fileprivate func getTitle() -> String {
+    private func getTitle() -> String {
         var title : String
         if currentPoints == 200 {
             title = "Perfect!"
@@ -85,18 +85,18 @@ class ViewController: UIViewController {
         return title
     }
     
-    fileprivate func getMessage() -> String {
+    private func getMessage() -> String {
         return "You scored \(currentPoints) points"
     }
     
-    fileprivate func startNewRound() {
+    private func startNewRound() {
         round += 1
         targetValue = Int.random(in: 1...100)
         currentValue = 50
         updateViews()
     }
     
-    fileprivate func updateViews() {
+    private func updateViews() {
         slider.value = Float(currentValue)
         targetLabel.text = String(targetValue)
         roundLabel.text = String(round)
