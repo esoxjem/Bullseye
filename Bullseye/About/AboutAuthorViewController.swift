@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AboutAuthorViewController: UIViewController {
+final class AboutAuthorViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
