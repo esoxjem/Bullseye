@@ -93,8 +93,10 @@ final class ViewController: UIViewController {
             title = "Perfect!"
         } else if currentPoints == 149 {
             title = "You almost had it!"
-        } else if currentPoints > 90 {
+        } else if currentPoints > 95 {
             title = "Pretty good!"
+        } else if currentPoints > 90 {
+            title = "Good!"
         } else {
             title = "Not Even Close!"
         }
