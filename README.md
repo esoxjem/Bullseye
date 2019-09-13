@@ -1,7 +1,7 @@
 # Bullseye
 A game of points and fame. Practice for
 
-- AutoLayout
+- Auto Layout
 - UIKit
 - WebKit
 
