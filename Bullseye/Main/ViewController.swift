@@ -105,7 +105,7 @@ final class ViewController: UIViewController {
     }
     
     private func getMessage() -> String {
-        return "You scored \(currentPoints) points"
+        return "You hit \(Int(slider.value.rounded())) and \n scored \(currentPoints) points"
     }
     
     private func startNewRound() {
