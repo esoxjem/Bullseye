@@ -1,5 +1,6 @@
 # Bullseye
-A game of points and fame. Practice for
+A game of points, glory and honour :fire:
+Practice for
 
 - Auto Layout
 - UIKit
